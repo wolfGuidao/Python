@@ -261,28 +261,42 @@ import json
 # print(type(c))
 # c()
 
-import time
+# import time
+#
+# print(time.time())
+#
+#
+# def func1(func):
+#     def func2(*arg, **kw):
+#         print(time.time())
+#         func(*arg, **kw)
+#     return func2
+#
+# @func1
+# def function(arg1, arg2, **kw):
+#     print("this is function" + arg1 + arg2)
+#     print(kw)
+#
+# # f = func1(function)
+# # f()
+#
+# @func1
+# def function1(arg1):
+#     print("this is function1" + arg1)
+#
+# function(" wolf ", " guidao ", a = 1, b = 2, c = "999")
+# function1(" wolf ")
 
-print(time.time())
+class A:
+    def name(self):
+
+        print("i am A")
+
+class B(A):
+    def name(self, name):
+        print("i am B")
 
 
-def func1(func):
-    def func2(*arg, **kw):
-        print(time.time())
-        func(*arg, **kw)
-    return func2
-
-@func1
-def function(arg1, arg2, **kw):
-    print("this is function" + arg1 + arg2)
-    print(kw)
-
-# f = func1(function)
-# f()
-
-@func1
-def function1(arg1):
-    print("this is function1" + arg1)
-
-function(" wolf ", " guidao ", a = 1, b = 2, c = "999")
-function1(" wolf ")
+# a = A()
+b = B()
+b.name(1)
